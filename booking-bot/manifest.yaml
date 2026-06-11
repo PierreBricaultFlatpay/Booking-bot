@@ -1,0 +1,24 @@
+display_information:
+  name: Booking Bot
+  description: Log bookings with /booking and celebrate in the channel
+features:
+  bot_user:
+    display_name: Booking Bot
+    always_online: true
+  slash_commands:
+    - command: /booking
+      description: Log a new booking
+      should_escape: false
+oauth_config:
+  scopes:
+    bot:
+      - commands
+      - chat:write
+      - files:read
+      - files:write
+settings:
+  interactivity:
+    is_enabled: true
+  org_deploy_enabled: false
+  socket_mode_enabled: true
+  token_rotation_enabled: false
